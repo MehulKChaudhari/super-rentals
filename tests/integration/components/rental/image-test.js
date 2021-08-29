@@ -8,10 +8,10 @@ module('Integration | Component | rental/image', function (hooks) {
 
   test('it renders the given image', async function (assert) {
     await render(hbs`
-    <Rental::Image
-    src="/assets/images/teaching-tomster.png"
-    alt="Teaching Tomster"
-  />
+      <Rental::Image
+        src="/assets/images/teaching-tomster.png"
+        alt="Teaching Tomster"
+      />
     `);
 
     assert
@@ -20,6 +20,7 @@ module('Integration | Component | rental/image', function (hooks) {
       .hasAttribute('src', '/assets/images/teaching-tomster.png')
       .hasAttribute('alt', 'Teaching Tomster');
   });
+
   test('clicking on the component toggles its size', async function (assert) {
     await render(hbs`
       <Rental::Image
