@@ -4,10 +4,10 @@
   <LinkTo @route='about' class='button'>About Us</LinkTo>
 </Jumbo>
 
-<div class="rentals">
-  <ul class="results">
-    <li><Rental /></li>
-    <li><Rental /></li>
-    <li><Rental /></li>
+<div class='rentals'>
+  <ul class='results'>
+    {{#each @model as |rental|}}
+      <li><Rental @rental={{rental}} /></li>
+    {{/each}}
   </ul>
 </div>
