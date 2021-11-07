@@ -21,7 +21,8 @@ div,
 span,
 a,
 button {
-  font-family: 'Lato', 'Open Sans', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif;
+  font-family: 'Lato', 'Open Sans', 'Helvetica Neue', 'Segoe UI', Helvetica,
+    Arial, sans-serif;
   line-height: 1.5;
 }
 
@@ -80,7 +81,7 @@ p {
 .menu {
   height: 4em;
   background-color: #677ae4;
-  background-color: #05526A;
+  background-color: #05526a;
   background-color: #e46855;
 }
 
@@ -261,7 +262,7 @@ p {
 }
 
 .rental button.image:after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -276,7 +277,8 @@ p {
   transition: opacity 0.25s ease-in-out;
 }
 
-.rental button.image:focus:after, .rental button.image:hover:after {
+.rental button.image:focus:after,
+.rental button.image:hover:after {
   opacity: 0.1;
 }
 
@@ -395,7 +397,8 @@ p {
 }
 
 @media only screen and (max-width: 919px) {
-  .rental.detailed .image, .rental.detailed .image.large {
+  .rental.detailed .image,
+  .rental.detailed .image.large {
     margin: 30px 25px 25px 25px;
     flex-basis: 100%;
     cursor: default;
@@ -458,10 +461,13 @@ p {
   top: -25px;
 }
 
-.screen-reader{
+.screen-reader {
   position: absolute;
   overflow: hidden;
   clip: rect(0 0 0 0);
-  height: 1px; width: 1px;
-  margin: -1px; padding: 0; border: 0;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 }
