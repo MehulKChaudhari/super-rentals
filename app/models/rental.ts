@@ -24,3 +24,9 @@ export default class RentalModel extends Model {
     }
   }
 }
+
+declare module 'ember-data/types/registries/model' {
+  export default interface ModelRegistry {
+    rental: RentalModel;
+  }
+}
